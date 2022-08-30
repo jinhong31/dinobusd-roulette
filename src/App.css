@@ -1,0 +1,435 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace
+}
+
+body {
+  background-color: #000;
+  font-weight: 700;
+  font-family: "Play", sans-serif;
+  padding: 0;
+  margin: 0
+}
+
+.card {
+  background-color: #f68f19;
+  border: 1px solid #fff
+}
+
+.card,
+td {
+  color: #000
+}
+
+.btn {
+  color: #032654
+}
+
+.btnd {
+  margin-left: 5px;
+  margin-bottom: 5px
+}
+
+tr {
+  border-bottom: 1px solid #333
+}
+
+@media only screen and (max-width: 600px) {
+  .btnd {
+    width: 100%;
+    margin-bottom: 5px
+  }
+
+  .cardDino {
+    height: auto
+  }
+
+  .card,
+  .cardDino {
+    margin-bottom: 10px
+  }
+}
+
+.logo-section {
+  width: 100%;
+  height: 150px
+}
+
+.logo {
+  width: 60%;
+  height: 100%;
+  margin-left: 10%;
+  background-image: url(./assets/dino.png);
+  background-size: contain;
+  background-repeat: no-repeat
+}
+
+@media only screen and (max-width: 550px) {
+  .logo {
+    width: 60%;
+    height: 100%;
+    margin-left: 35%;
+    background-image: url(./assets/rolutte.png);
+    background-size: contain;
+    background-repeat: no-repeat
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+  background-color: #000;
+  width: 90%;
+  min-width: 550px;
+  height: 300px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.grid-container div {
+  display: flex;
+  padding: 0;
+  border: 1px solid #fff
+}
+
+.item0 {
+  grid-row: 1/4;
+  text-align: center
+}
+
+.wrapper {
+  display: grid;
+  margin: 10px 10px 10px 9%;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 35px;
+  -webkit-column-gap: 35px;
+  column-gap: 35px;
+  width: 76%
+}
+
+.wrapper div {
+  height: 60px;
+  border: 1px solid #000
+}
+
+.wrapper2 {
+  display: grid;
+  margin-left: 37px;
+  margin-right: 37px;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 10px
+}
+
+.wrapper2 div {
+  height: 60px;
+  border: 1px solid #000
+}
+
+@media only screen and (max-width: 550px) {
+  .grid-container {
+    margin-top: 2%;
+    display: flexbox;
+    grid-template-columns: .5fr .5fr .5fr .5fr;
+    background-color: #000;
+    height: 100%
+  }
+
+  .grid-container div {
+    display: flex
+  }
+
+  .item0 {
+    grid-column: 1/5;
+    text-align: center
+  }
+
+  .wrapper {
+    display: flexbox;
+    grid-template-columns: auto;
+    position: relative;
+    margin-top: 20px
+  }
+
+  .wrapper div {
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid #000
+  }
+
+  .wrapper2 {
+    display: grid;
+    grid-template-columns: auto auto
+  }
+
+  .wrapper2 div {
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid #000
+  }
+}
+
+.cell {
+  display: inline-flex;
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  align-items: center
+}
+
+.data-store {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto
+}
+
+.cell-green,
+.cell-green:hover {
+  background-color: #000
+}
+
+.cell-green:hover {
+  color: #ff0
+}
+
+.cell-red {
+  background-color: red
+}
+
+.controller {
+  background: linear-gradient(243deg, #e3e809, #f3b811 41%);
+  color: #000
+}
+
+.controller-zero {
+  background-color: green
+}
+
+.controller-zero h4,
+.controller h4 {
+  font-family: "Times New Roman", Times, serif;
+  padding: 0;
+  margin: auto
+}
+
+.controller:hover {
+  color: #3f6f0f
+}
+
+.cell-red:hover {
+  background-color: red;
+  color: #ff0
+}
+
+.cell:hover {
+  box-shadow: inset 0 0 5px #fff, inset 0 0 5px #fff
+}
+
+@media only screen and (max-width: 550px) {
+  .cell {
+    display: inline-flex;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    align-items: center
+  }
+
+  .controller {
+    background-color: #000;
+    color: #000;
+    grid-column: 1/5;
+    height: 50px;
+    border: 1px solid #000
+  }
+
+  .controller h4 {
+    font-family: "Times New Roman", Times, serif;
+    padding: 0;
+    margin: auto
+  }
+}
+
+#Userinfo {
+  width: 100%;
+  height: 100%;
+  background-color: #eb961e;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #000;
+  padding-bottom: 20px
+}
+
+#userlist {
+  border: 1px solid #000;
+  margin-top: 5px;
+  list-style: none;
+  background-color: #fff;
+  border-radius: 5px
+}
+
+h1 {
+  padding-top: 40px;
+  font-family: "Times New Roman", Times, serif
+}
+
+.Navbar {
+  display: flexbox
+}
+
+.Navbar nav {
+  display: inline-flex
+}
+
+.Navbar a {
+  color: #fff
+}
+
+.Navbar a,
+.Navbar a:hover {
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: larger
+}
+
+.Navbar a:hover {
+  color: #ff0
+}
+
+.Navbar li {
+  margin: 10px
+}
+
+#Liq-btn {
+  margin-left: 60px;
+  color: #000;
+  background-color: #ffc107;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px
+}
+
+@media only screen and (max-width: 550px) {
+
+  #Liq-btn,
+  .Navbar li {
+    margin-left: auto;
+    margin-right: auto
+  }
+}
+
+.Payout-list li {
+  border: 1px solid #fff;
+  margin: 5px;
+  font-size: 15px;
+  color: #000;
+  font-weight: 600
+}
+
+.container-fluid {
+  background-color: #000
+}
+
+#logo-section {
+  text-align: center;
+  display: inline-flexbox
+}
+
+#Navbar-sec {
+  padding: auto
+}
+
+#table-section {
+  text-align: center
+}
+
+#wheelsec {
+  padding-top: 30px
+}
+
+#detail-sec,
+#wheelsec {
+  margin-bottom: 20px
+}
+
+#tablesec {
+  margin-left: 2%
+}
+
+#res-section {
+  margin-top: 10px;
+  padding-top: 20px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff
+}
+
+.Approve-btn {
+  width: 100%
+}
+
+#res-section button {
+  width: 100px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 600
+}
+
+#wallet-section {
+  padding: 10px;
+  margin-bottom: 10px
+}
+
+#user-bets {
+  margin-bottom: 20px
+}
+
+#approve-sec {
+  text-align: center
+}
+
+@media only screen and (max-width: 550px) {
+  #logo-section {
+    display: grid
+  }
+
+  #logo-section,
+  #logo-section col {
+    text-align: center
+  }
+}
+
+.card-body {
+  background-color: #eb961e
+}
+
+.rou-wheel>div:first-child {
+  margin-left: auto;
+  margin-right: auto;
+  width: 330px;
+  height: 330px;
+  background-image: url("./assets/rolutte.png");
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%
+}
+
+.wheel-btn {
+  min-width: 40%;
+  height: 20%;
+  border-radius: 5px;
+  background: linear-gradient(180deg, #0f0 0, #ff0);
+  margin: auto
+}
+
+/*# sourceMappingURL=main.5970769e.chunk.css.map */
